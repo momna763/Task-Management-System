@@ -1,0 +1,62 @@
+    /* Custom styles */
+    body {
+        background-color: #ffffff; /* Light gray background color */
+        background-image: url('background1.jpg'); /* Replace with the actual path to your background image */
+        background-repeat: repeat; /* Repeat the background image */
+        background-color: #f2f2f2; /* Light background color */
+        
+    }
+
+    /* Custom styles for the task list */
+    #taskList {
+        background-color: #ffffff; /* White background */
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .task-item {
+        margin-bottom: 5px;
+        background-color: #f1f3f5; /* Light gray task item */
+        padding: 8px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    /* Custom styles for the task details */
+    #taskDetails {
+        background-color: #ffffff; /* White background */
+        border-radius: 5px;
+        padding: 15px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Custom styles for the task form */
+    #addTaskForm {
+        background-color: #ffffff; /* White background */
+        border-radius: 5px;
+        padding: 15px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Custom styles for sorting and filtering options */
+    #sortOption, #filterOption {
+        background-color: #f1f3f5; /* Light gray */
+        color: #000000; /* Black text color */
+        border: none;
+        border-radius: 3px;
+        padding: 5px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    /* Custom styles for buttons */
+    .btn-primary:hover {
+        background-color: #32b459; /* Dark green on hover */
+        border-color: #32b459;
+    }
+
+    .btn-primary {
+        background-color: #0056b3;  /* Blue primary color */
+        border-color: #0056b3;
+    }
+    

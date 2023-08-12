@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Management System</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+    <!-- Task List -->
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <h2>Task List</h2>
+            <ul id="taskList" class="list-group">
+                <!-- Task items will be dynamically added here -->
+            </ul>
+            
+        </div>
+        
+        <!-- Task Details -->
+<div class="col-md-6">
+    <h2>Task Details [Editable]</h2>
+    <div id="taskDetails" class="border p-3">
+        <!-- Selected task details will be shown here -->
+        <h5>Title: <span id="detailsTitle" contenteditable="false"></span></h5>
+        <p>Description: <span id="detailsDescription" contenteditable="false"></span></p>
+        <p>Due Date: <span id="detailsDueDate" contenteditable="false"></span></p>
+    </div>
+</div>
+    </div>
+
+    <!-- Task Form -->
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <h2>Add Task</h2>
+            <form id="addTaskForm">
+                <div class="form-group">
+                    <label for="taskTitle">Title:</label>
+                    <input type="text" class="form-control" id="taskTitle" required>
+                </div>
+                <div class="form-group">
+                    <label for="taskDescription">Description:</label>
+                    <textarea class="form-control" id="taskDescription" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="dueDate">Due Date:</label>
+                    <input type="date" class="form-control" id="dueDate" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Add Task</button>
+            </form>
+        </div>
+        
+        <!-- Sorting and Filtering Options -->
+        <div class="col-md-6">
+            <h2>Sort and Filter</h2>
+            <div class="form-group">
+                <label for="sortOption">Sort by:</label>
+                <select class="form-control" id="sortOption">
+                    <option value="dueDate">Due Date</option>
+                    <option value="completionStatus">Completion Status</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="filterOption">Filter by:</label>
+                <select class="form-control" id="filterOption">
+                    <option value="all">All Tasks</option>
+                    <option value="completed">Completed Tasks</option>
+                    <option value="active">Active Tasks</option>
+                </select>
+            </div>
+            <button id="saveTaskDetails" class="btn btn-primary">Save</button>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/bootstrap.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
